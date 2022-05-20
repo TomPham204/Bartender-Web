@@ -1,0 +1,30 @@
+body,
+html {
+  width: 100%;
+  margin: 0;
+}
+#bg {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  display: inline-block;
+}
+/* #tv {
+  width: 10%;
+  position: absolute;
+  z-index: 0;
+  top: 69%;
+  left: 2%;
+  transform-origin: 1% 1% 1px;
+  transform: rotateY(40deg);
+  transform: skewY(-17deg);
+} */
+#tv {
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  top: 0%;
+  left: 0%;
+}
