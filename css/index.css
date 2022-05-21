@@ -83,9 +83,10 @@ img {
   background-size: cover;
   z-index: -1;
   display: inline-block;
+  overflow-y: hidden;
 }
 
-#tv {
+/* #tv {
   width: 120%;
   position: absolute;
   z-index: 0;
@@ -95,9 +96,9 @@ img {
   transition-duration: 1s;
   transition-delay: 0.2s;
   transition-timing-function: linear;
-}
+} */
 
-#tv:onclick {
+#tv {
   width: 10%;
   position: absolute;
   z-index: 0;
