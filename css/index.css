@@ -89,15 +89,37 @@ li {
   font-family: "Bell MT";
   font-size: 22px;
   box-shadow: rgba(181, 180, 183, 0.3) 0px 40px 30px 0px;
-  /* display: none; */
 }
+.visible {
+  visibility: visible;
+  animation: showingredients 4s linear 1 normal no-repeat;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+}
+.hidden {
+  visibility: hidden;
+}
+@keyframes showingredients {
+  0% {
+    visibility: hidden;
+  }
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
 .ingredient-container #main-ingredient {
+  visibility: inherit;
   grid-area: main;
   margin: 2px auto;
   align-items: center;
   padding: 2px;
 }
 .ingredient-container #mix {
+  visibility: inherit;
   grid-area: mix;
   margin: 5px auto;
   margin-top: 10px;
@@ -105,36 +127,64 @@ li {
   padding: 5px;
 }
 .ingredient-container img {
+  visibility: inherit;
   width: 65%;
   align-self: center;
 }
 .ingredient-container img:hover {
+  visibility: inherit;
   border: 3px solid rgba(255, 255, 255, 0);
+}
+.hiddens {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
 }
 
 /* Background */
-.bg-small {
+#bg {
   position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   z-index: -1;
   display: inline-block;
   overflow-y: hidden;
 }
 .bg-large {
   position: absolute;
+  animation: zoomout 4s linear 1 normal;
+  animation-fill-mode: both;
+  animation-delay: 99999s;
+
   left: -24em;
   top: -118em;
   width: 550%;
-  background-position: center;
-  background-repeat: no-repeat;
-  /* background-size: cover; */
-  z-index: -1;
-  display: inline-block;
-  overflow-y: hidden;
-  transition: all 0.6s ease-in-out;
+}
+.bg-small {
+  position: absolute;
+  animation: zoomout 4s linear 1 normal;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+
+  left: -24em;
+  top: -118em;
+  width: 550%;
+}
+@keyframes zoomout {
+  0% {
+    left: -24em;
+    top: -118em;
+    width: 550%;
+  }
+  30% {
+    left: -16em;
+    top: -98em;
+    width: 470%;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+    width: 100%;
+  }
 }

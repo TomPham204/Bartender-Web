@@ -10,14 +10,14 @@
   <body>
     <div class="grid-container">
       <nav class="flex navbar">
-        <span class="logo">3-10-der</span>
+        <span onclick="zoomOut()" class="logo">3-10-der</span>
         <div class="nav">
           <a href="index.html">Index</a>
           <a href="register.html">Register</a>
           <a href="about.html">About</a>
         </div>
       </nav>
-      <div class="ingredient-container">
+      <div id="i-panel" class="ingredient-container hidden">
         <h3 id="main-ingredient">Main Ingredient (Choose one)</h3>
         <img src="img/coffee.png" alt="Coffee" />
         <img src="img/juice.png" alt="Juice" />
@@ -29,12 +29,8 @@
         <img src="img/milk.png" alt="Milk" />
       </div>
     </div>
-    <img
-      onclick="zoomOut()"
-      id="bg"
-      class="bg-large"
-      src="img/bg-tv.png"
-      alt="Bar Background"
-    />
+    <div onclick="zoomOut()">
+      <img id="bg" class="bg-large" src="img/bg-tv.png" alt="Bar Background" />
+    </div>
   </body>
 </html>
