@@ -5,21 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
     <link rel="stylesheet" href="css/index.css" />
+    <script src="js/tveffect.js"></script>
   </head>
   <body>
     <div class="grid-container">
-        <nav class="flex navbar">
-          <span class="logo">3-10-der</span>
-          <div class="nav">
-            <a href="index.html">Index</a>
-            <a href="register.html">Register</a>
-            <a href="about.html">About</a>
-          </div>
-        </nav>
+      <nav class="flex navbar">
+        <span class="logo">3-10-der</span>
+        <div class="nav">
+          <a href="index.html">Index</a>
+          <a href="register.html">Register</a>
+          <a href="about.html">About</a>
+        </div>
+      </nav>
+      <div class="ingredient-container">
+        <h3 id="main-ingredient">Main Ingredient (Choose one)</h3>
+        <img src="img/coffee.png" alt="Coffee" />
+        <img src="img/juice.png" alt="Juice" />
+        <img src="img/tea.png" alt="Tea" />
+        <h3 id="mix">Mix (Choose two)</h3>
+        <img src="img/caramel.png" alt="Caramel" />
+        <img src="img/fizzy.png" alt="Fizzy" />
+        <img src="img/mint.png" alt="Mint grass" />
+        <img src="img/milk.png" alt="Milk" />
       </div>
-
-      <img id="bg" src="img/bg.jpg" alt="Bar Background" />
-      <img id="tv" src="img/tv.png" alt="TV Image" />
     </div>
+    <img
+      onclick="zoomOut()"
+      id="bg"
+      class="bg-large"
+      src="img/bg-tv.png"
+      alt="Bar Background"
+    />
   </body>
 </html>

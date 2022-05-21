@@ -8,8 +8,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial;
   font-size: 18px;
   height: 100vh;
-  background: rgb(71, 71, 71);
-  background: url(../img/bg.jpg);
+  /* background: url(../img/bg.jpg); */
   background-size: 100vw;
   overflow: hidden;
 }
@@ -26,6 +25,7 @@ li {
   grid-template-areas: "nav nav" "result ingredient";
   grid-template-columns: 6fr 4fr;
   grid-template-rows: 50px 1fr;
+  z-index: 0;
 }
 
 /* navbar */
@@ -63,7 +63,7 @@ li {
   margin-right: 6px;
 }
 
-.nav a[href="index.html"]{
+.nav a[href="index.html"] {
   border-bottom: 0.8px solid #fff;
 }
 
@@ -71,8 +71,52 @@ li {
   color: rgb(255, 180, 40);
 }
 
+/* Ingredients */
+.ingredient-container {
+  display: grid;
+  gap: 0px;
+  grid-area: ingredient;
+  grid-template-areas: "main main main" "coffee milk tea" "mix mix mix" "caramel fizzy mint";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40px 1fr 40px 1fr;
+  margin-right: 50px;
+  margin-top: 30px;
+  padding: 15px 10px;
+  justify-items: center;
+  background: rgba(255, 186, 186, 0.39);
+  border-radius: 10px;
+  color: #fff;
+  font-family: "Bell MT";
+  font-size: 22px;
+  box-shadow: rgba(181, 180, 183, 0.3) 0px 40px 30px 0px;
+  /* display: none; */
+}
+.ingredient-container #main-ingredient {
+  grid-area: main;
+  margin: 2px auto;
+  align-items: center;
+  padding: 2px;
+}
+.ingredient-container #mix {
+  grid-area: mix;
+  margin: 5px auto;
+  margin-top: 10px;
+  align-items: center;
+  padding: 5px;
+}
+.ingredient-container img {
+  width: 65%;
+  align-self: center;
+}
+.ingredient-container img:hover {
+  border: 3px solid rgba(255, 255, 255, 0);
+}
+
 /* Background */
-#bg {
+.bg-small {
+  position: absolute;
+  left: 0px;
+  top: 0px;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -81,26 +125,16 @@ li {
   display: inline-block;
   overflow-y: hidden;
 }
-
-/* #tv {
-  width: 120%;
+.bg-large {
   position: absolute;
-  z-index: 0;
-  top: -20%;
-  left: -11%;
-  transition-property: all;
-  transition-duration: 1s;
-  transition-delay: 0.2s;
-  transition-timing-function: linear;
-} */
-
-#tv {
-  width: 10%;
-  position: absolute;
-  z-index: 0;
-  top: 69%;
-  left: 2%;
-  transform-origin: 1% 1% 1px;
-  transform: rotateY(40deg);
-  transform: skewY(-17deg);
+  left: -24em;
+  top: -118em;
+  width: 550%;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  z-index: -1;
+  display: inline-block;
+  overflow-y: hidden;
+  transition: all 0.6s ease-in-out;
 }

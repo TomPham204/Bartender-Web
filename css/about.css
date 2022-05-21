@@ -73,6 +73,9 @@ li {
 
 /* Background */
 #bg {
+  position: absolute;
+  left: 0px;
+  top: 0px;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
