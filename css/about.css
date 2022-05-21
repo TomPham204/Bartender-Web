@@ -63,7 +63,7 @@ li {
   margin-right: 6px;
 }
 
-.nav a[href="index.html"]{
+.nav a[href="about.html"] {
   border-bottom: 0.8px solid #fff;
 }
 
@@ -80,27 +80,4 @@ li {
   z-index: -1;
   display: inline-block;
   overflow-y: hidden;
-}
-
-/* #tv {
-  width: 120%;
-  position: absolute;
-  z-index: 0;
-  top: -20%;
-  left: -11%;
-  transition-property: all;
-  transition-duration: 1s;
-  transition-delay: 0.2s;
-  transition-timing-function: linear;
-} */
-
-#tv {
-  width: 10%;
-  position: absolute;
-  z-index: 0;
-  top: 69%;
-  left: 2%;
-  transform-origin: 1% 1% 1px;
-  transform: rotateY(40deg);
-  transform: skewY(-17deg);
 }

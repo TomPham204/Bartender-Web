@@ -42,7 +42,7 @@ body {
   height: 100%;
 }
 
-.navbar .icon {
+.navbar .logo {
   padding: 6px;
   color: #fff;
 }
@@ -59,9 +59,12 @@ body {
   margin-right: 6px;
 }
 
-.nav a:hover {
-  color: #fff;
+.nav a[href="register.html"] {
   border-bottom: 0.8px solid #fff;
+}
+
+.nav a:hover {
+  color: rgb(255, 180, 40);
 }
 
 /* left info panel */
