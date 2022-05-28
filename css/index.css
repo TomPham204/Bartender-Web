@@ -8,7 +8,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial;
   font-size: 18px;
   height: 100vh;
-  /* background: url(../img/bg.jpg); */
+
   background-size: 100vw;
   overflow: hidden;
 }
@@ -91,23 +91,26 @@ li {
   box-shadow: rgba(181, 180, 183, 0.3) 0px 40px 30px 0px;
 }
 .visible {
-  visibility: visible;
-  animation: showingredients 4s linear 1 normal no-repeat;
+  opacity: 1;
+  animation: showingredients 2s linear 1 normal no-repeat;
   animation-fill-mode: both;
-  animation-delay: 0s;
+  animation-delay: 3s;
 }
 .hidden {
-  visibility: hidden;
+  opacity: 0;
 }
+
 @keyframes showingredients {
   0% {
-    visibility: hidden;
+    opacity: 0;
   }
-  99% {
-    visibility: hidden;
+
+  50% {
+    opacity: 0.5;
   }
+
   100% {
-    visibility: visible;
+    opacity: 1;
   }
 }
 
@@ -135,12 +138,6 @@ li {
   visibility: inherit;
   border: 3px solid rgba(255, 255, 255, 0);
 }
-.hiddens {
-  visibility: hidden;
-}
-.visible {
-  visibility: visible;
-}
 
 /* Background */
 #bg {
@@ -153,7 +150,7 @@ li {
 }
 .bg-large {
   position: absolute;
-  animation: zoomout 4s linear 1 normal;
+  animation: zoomout 3s ease-in 1 normal;
   animation-fill-mode: both;
   animation-delay: 99999s;
 
@@ -163,7 +160,7 @@ li {
 }
 .bg-small {
   position: absolute;
-  animation: zoomout 4s linear 1 normal;
+  animation: zoomout 3s ease-in 1 normal;
   animation-fill-mode: both;
   animation-delay: 0s;
 
