@@ -10,7 +10,8 @@
   <body>
     <div class="grid-container">
       <nav class="flex navbar">
-        <span onclick="zoomOut()" class="logo">Webapp pj</span>
+        <span class="logo">Webapp pj</span>
+        <h2 id="btn" onclick="zoomOut()">START!</h2>
         <div class="nav">
           <a href="index.html">Index</a>
           <a href="register.html">Register</a>
@@ -19,14 +20,49 @@
       </nav>
       <div id="i-panel" class="ingredient-container hidden">
         <h3 id="main-ingredient">Main Ingredient (Choose one)</h3>
-        <img src="img/coffee.png" alt="Coffee" />
-        <img src="img/juice.png" alt="Juice" />
-        <img src="img/tea.png" alt="Tea" />
+        <img
+          id="coffee"
+          src="img/coffee.png"
+          alt="Coffee"
+          onclick="clicked(this, 'coffee')"
+        />
+        <img
+          src="img/juice.png"
+          alt="Juice"
+          id="juice"
+          onclick="clicked(this, 'juice')"
+        />
+        <img
+          src="img/tea.png"
+          alt="Tea"
+          id="tea"
+          onclick="clicked(this, 'tea')"
+        />
         <h3 id="mix">Mix (Choose two)</h3>
-        <img src="img/caramel.png" alt="Caramel" />
-        <img src="img/fizzy.png" alt="Fizzy" />
-        <img src="img/mint.png" alt="Mint grass" />
-        <img src="img/milk.png" alt="Milk" />
+        <img
+          src="img/caramel.png"
+          alt="Caramel"
+          id="caramel"
+          onclick="clicked(this, 'caramel')"
+        />
+        <img
+          src="img/fizzy.png"
+          alt="Fizzy"
+          id="fizzy"
+          onclick="clicked(this, 'fizzy')"
+        />
+        <img
+          src="img/mint.png"
+          alt="Mint"
+          id="mint"
+          onclick="clicked(this, 'mint')"
+        />
+        <img
+          src="img/milk.png"
+          alt="Milk"
+          id="milk"
+          onclick="clicked(this, 'milk')"
+        />
       </div>
     </div>
     <div onclick="zoomOut()">

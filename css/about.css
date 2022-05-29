@@ -98,18 +98,20 @@ li {
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   align-items: center;
-  margin: 15px 25px;
+  margin: 20px 25px;
   font-size: 22px;
   font-style: italic;
   margin-left: 20px;
   gap: 25px;
   align-content: space-between;
   padding: 25px 25px;
+  /* background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px; */
 }
 
 .member img {
   width: 80%;
-  max-height: 100%px;
+  max-height: 100%;
   object-fit: cover;
   align-items: center;
   justify-content: space-between;

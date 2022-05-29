@@ -46,6 +46,14 @@ li {
   height: 100%;
 }
 
+.navbar h2 {
+  border: 1.5px solid #fff;
+  border-radius: 5px;
+  width: 10%;
+  padding: 10px 10px;
+  color: white;
+}
+
 .navbar .logo {
   padding: 6px;
   color: #fff;
@@ -134,10 +142,7 @@ li {
   width: 65%;
   align-self: center;
 }
-.ingredient-container img:hover {
-  visibility: inherit;
-  border: 3px solid rgba(255, 255, 255, 0);
-}
+
 
 /* Background */
 #bg {

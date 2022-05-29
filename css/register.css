@@ -88,15 +88,15 @@ body {
 /* right registration form */
 .form {
   grid-area: form;
-  padding: 18px;
-  margin: 30px auto;
+  padding: 30px;
+  margin: 20px auto;
   display: flex;
   flex-direction: column;
   background: rgb(243, 174, 15);
   border-radius: 10px;
-  max-width: 70%;
+  max-width: 80%;
   align-items: center;
-  line-height: 1.7;
+  line-height: 1.2;
 }
 
 input {
