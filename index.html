@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index</title>
+    <title>Beverage Site</title>
     <link rel="stylesheet" href="css/index.css" />
     <script src="js/tveffect.js"></script>
   </head>
@@ -19,54 +19,57 @@
         </div>
       </nav>
       <div id="i-panel" class="ingredient-container hidden">
+        <input type="button" value="Start the magic" onclick="verify()" />
         <h3 id="main-ingredient">Main Ingredient (Choose one)</h3>
         <img
           id="coffee"
+          class="ingredient-img"
           src="img/coffee.png"
           alt="Coffee"
-          onclick="clicked(this, 'coffee')"
+          onclick="clicked(this)"
         />
         <img
           src="img/juice.png"
           alt="Juice"
           id="juice"
-          onclick="clicked(this, 'juice')"
+          class="ingredient-img"
+          onclick="clicked(this)"
         />
-        <img
-          src="img/tea.png"
-          alt="Tea"
-          id="tea"
-          onclick="clicked(this, 'tea')"
-        />
+        <img src="img/tea.png" alt="Tea" id="tea" onclick="clicked(this)" />
         <h3 id="mix">Mix (Choose two)</h3>
         <img
           src="img/caramel.png"
           alt="Caramel"
           id="caramel"
-          onclick="clicked(this, 'caramel')"
+          class="ingredient-img"
+          onclick="clicked(this)"
         />
         <img
           src="img/fizzy.png"
           alt="Fizzy"
           id="fizzy"
-          onclick="clicked(this, 'fizzy')"
+          class="ingredient-img"
+          onclick="clicked(this)"
         />
         <img
           src="img/mint.png"
           alt="Mint"
           id="mint"
-          onclick="clicked(this, 'mint')"
+          class="ingredient-img"
+          onclick="clicked(this)"
         />
         <img
           src="img/milk.png"
           alt="Milk"
           id="milk"
-          onclick="clicked(this, 'milk')"
+          class="ingredient-img"
+          onclick="clicked(this)"
         />
       </div>
     </div>
-    <div onclick="zoomOut()">
+    <div>
       <img id="bg" class="bg-large" src="img/bg-tv.png" alt="Bar Background" />
     </div>
+    <div><img id="bottle" src="img/bottle.png" alt="Bottle of liquid" /></div>
   </body>
 </html>
