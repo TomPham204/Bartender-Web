@@ -8,7 +8,6 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial;
   font-size: 18px;
   height: 100vh;
-
   background-size: 100vw;
   overflow: hidden;
 }
@@ -44,6 +43,7 @@ li {
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  z-index: 5;
 }
 
 .navbar h2 {
@@ -149,7 +149,7 @@ li {
   border: none;
   background-color: rgb(116, 40, 27);
   padding: 5px 5px 5px 5px;
-  z-index: 11;
+  z-index: 0;
   align-items: center;
   justify-content: space-around;
   border-radius: 8px;
@@ -208,10 +208,21 @@ li {
 
 /* Bottle */
 #bottle {
-  position: absolute;
+  position: inherit;
   max-height: 50vh;
-  height: 50vh;
-  top: 36vh;
-  left: 25vw;
+  height: 30vh;
+  top: 37vh;
+  left: 18vw;
   display: none;
+  z-index: 20;
+}
+#bottle-bg {
+  position: absolute;
+  height: 73vh;
+  width: 40vw;
+  top: 95px;
+  left: 8vw;
+  display: none;
+  background-color: rgba(103, 70, 64, 0.425);
+  border-radius: 10px;
 }
