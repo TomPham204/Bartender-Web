@@ -24,8 +24,10 @@ if(!isset($_SESSION['user_name'])){
         <span class="logo">Webapp pj</span>
         <h2 id="btn" onclick="zoomOut()">START!</h2>
         <div class="nav">
-          <p>welcome <span><?php echo $_SESSION['user_name'] ?></span></p>
-          <a href="logout.php" class=""btn>Logout</a>
+          <p>
+            Welcome <span><?php echo $_SESSION['user_name'] ?></span>
+          </p>
+          <a href="logout.php" class="" btn>Logout</a>
         </div>
       </nav>
       <div id="i-panel" class="ingredient-container hidden">
@@ -45,11 +47,12 @@ if(!isset($_SESSION['user_name'])){
           class="ingredient-img"
           onclick="clicked(this)"
         />
-        <img src="img/tea.png" 
-          alt="Tea" 
-          id="tea" 
+        <img
+          src="img/tea.png"
+          alt="Tea"
+          id="tea"
           class="ingredient-img"
-          onclick="clicked(this)" 
+          onclick="clicked(this)"
         />
         <h3 id="mix">Mix (Choose two)</h3>
         <img
@@ -87,7 +90,12 @@ if(!isset($_SESSION['user_name'])){
     </div>
     <div id="bottle-bg">
       <h3></h3>
-      <img id="bottle" src="img/bottle.png" alt="Bottle of liquid" />
+      <img
+        id="bottle"
+        class="bottle"
+        src="img/juice-bottle.png"
+        alt="Bottle of liquid"
+      />
     </div>
   </body>
 </html>

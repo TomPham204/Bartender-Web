@@ -3,6 +3,7 @@ var idCount = 0; //use var for bigger scope
 var isCompleted = false;
 var idChosen = [];
 var base = ["coffee", "juice", "tea"];
+var drinkResult = "";
 
 function zoomOut() {
   background = document.getElementById("bg");
@@ -21,7 +22,7 @@ function clicked(element) {
 }
 
 function resetState() {
-  console.log("resetted");
+  console.log("State resetted");
   elements = document.getElementsByClassName("ingredient-img");
   for (var i = 0; i < elements.length; i++) {
     elements[i].style.border = "none";
@@ -64,6 +65,8 @@ function verify() {
     j = 0;
     if (idCount == 1) {
       showBottle();
+      item = document.getElementById("bottle");
+      item.className = "bottle bottle-shake";
       isCompleted = true;
     } else {
       console.log("You should choose only 1 main and 2 other mixes");
@@ -71,7 +74,9 @@ function verify() {
     }
   } else {
     // check if choose more or less than 3 ingredients
-    console.log(ingredientCount + " is not the right number of ingredients");
+    console.log(
+      ingredientCount + " is not the right number of ingredients. Require: 3"
+    );
     resetState();
     return;
   }
