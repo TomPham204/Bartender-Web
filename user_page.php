@@ -1,13 +1,5 @@
-<?php 
-
-@include 'config.php';
-session_start();
-
-if(!isset($_SESSION['user_name'])){
-    header('location:login_form.php');
-}
-
-?>
+<p?php @include 'config.php'; session_start();
+if(!isset($_SESSION['user_name'])){ header('location:login_form.php'); } ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,14 +12,18 @@ if(!isset($_SESSION['user_name'])){
   </head>
   <body>
     <div class="grid-container">
-      <nav class="flex navbar">
+      <nav class="navbar">
         <span class="logo">Webapp pj</span>
         <h2 id="btn" onclick="zoomOut()">START!</h2>
         <div class="nav">
-          <p>
-            Welcome <span><?php echo $_SESSION['user_name'] ?></span>
-          </p>
-          <a href="logout.php" class="" btn>Logout</a>
+          <a href="about.html">About Us</a>
+          <a href="user_page.html">User Page</a>
+          <div>
+            <p>
+              Welcome <span><?php echo $_SESSION['user_name'] ?></span>
+            </p>
+            <a href="logout.php" class="" btn>Logout</a>
+          </div>
         </div>
       </nav>
       <div id="i-panel" class="ingredient-container hidden">
@@ -89,7 +85,9 @@ if(!isset($_SESSION['user_name'])){
       <img id="bg" class="bg-large" src="img/bg-tv.png" alt="Bar Background" />
     </div>
     <div id="bottle-bg">
-      <h3></h3>
+      <h3 id="result"></h3>
+      <br />
+      <p id="drink-description"></p>
       <img
         id="bottle"
         class="bottle"
