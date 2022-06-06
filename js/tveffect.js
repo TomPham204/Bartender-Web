@@ -55,11 +55,11 @@ const names = [
   "Fresh Fiz",
   "Misty Graden",
   "Love Poem",
-  "M-factor",
+  "Unlimited Mint Work",
   "Scholar Afternoon",
   "Brightcrown",
   "Tart Brilliance",
-  "3,2,1 repeat",
+  "Yangu",
   "Laughter n Cheer",
   "Gray Valley",
   "Sweet Cider",
@@ -67,7 +67,7 @@ const names = [
   "Barbatos Boon",
   "Birch Sap",
   "Snow Kiss",
-  "Ayaya Homecoming",
+  "More Ayaya",
   "Manhattan",
 ];
 
@@ -187,7 +187,7 @@ function viewResult(drink_name, ingredients_name) {
   const para1 = document.createElement("p");
   para1.id = "drink-description";
   const node1 = document.createTextNode(
-    "A refreshing drink, made of " + ingredients_name + "."
+    "A refreshing drink, made of " + ingredients_name + ". Rated 10/10."
   );
   para1.appendChild(node1);
   parent1.replaceChild(para1, child1);

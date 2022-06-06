@@ -6,7 +6,7 @@ if(!isset($_SESSION['user_name'])){ header('location:login_form.php'); } ?>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beverage Site</title>
+    <title>Mix Your Drinks</title>
     <link rel="stylesheet" href="css/index.css" />
     <script src="js/tveffect.js"></script>
   </head>
@@ -28,7 +28,7 @@ if(!isset($_SESSION['user_name'])){ header('location:login_form.php'); } ?>
       </nav>
       <div id="i-panel" class="ingredient-container hidden">
         <input type="button" value="Start the magic" onclick="verify()" />
-        <h3 id="main-ingredient">Main Ingredient (Choose one)</h3>
+        <h3 id="main-ingredient">Base (Choose one)</h3>
         <img
           id="coffee"
           class="ingredient-img"
