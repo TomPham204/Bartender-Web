@@ -37,12 +37,13 @@ li {
     rgba(219, 63, 6, 0.13) 89%,
     rgba(255, 136, 0, 0) 80%
   );
+  color: white;
   padding: 0 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
+  width: 100%;
   z-index: 5;
 }
 
@@ -60,7 +61,12 @@ li {
 }
 
 .nav {
-  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  margin: 10px 30px;
   margin-right: 20px;
 }
 .nav > p {
@@ -70,8 +76,8 @@ li {
 .nav a {
   text-decoration: none;
   color: #fff;
-  margin: 1px 4px;
-  margin-right: 6px;
+  margin: 1px 20px;
+  margin-right: 10px;
 }
 
 .nav a[href="index.html"] {
@@ -227,9 +233,10 @@ li {
   left: 8vw;
   display: none;
   background-color: rgba(103, 70, 64, 0.425);
+  color: white;
+  align-items: center;
   border-radius: 10px;
 }
-
 .bottle-shake {
   animation: shake 1s ease-in-out 1 normal;
   animation-fill-mode: both;
@@ -269,4 +276,20 @@ li {
   100% {
     transform: rotate(0deg);
   }
+}
+
+/* Result text */
+#result {
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px 30px;
+  text-align: center;
+  font-size: 30px;
+}
+#drink-description {
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px 30px;
+  text-align: center;
+  font-size: 30px;
 }

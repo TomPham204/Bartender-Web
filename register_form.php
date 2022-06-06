@@ -52,10 +52,7 @@ if(isset($_POST['submit'])){
     <div class="info-pane flex">
         <h3>Welcome to our site</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-          voluptas rem est rerum ratione error eligendi, ipsam nihil
-          exercitationem eius excepturi dolores facilis unde perferendis ipsum
-          reiciendis earum maxime? Labore?
+          Join us. Be a registered user. Save your favorite drinks. 
         </p>
     </div>
     <div class="form-flex">
