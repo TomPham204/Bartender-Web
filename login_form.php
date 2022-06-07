@@ -12,7 +12,7 @@ if(isset($_POST['submit'])){
     $cpass = md5($_POST['cpassword']);
     $user_type = $_POST['user_type'];
 
-    $select = "SELECT * FROM user_form WHERE email = '$email' && password = '$pass' ";
+    $select = "SELECT * FROM user_form WHERE name = '$name' && password = '$pass' ";
 
     $result = mysqli_query($conn, $select);
 
@@ -53,7 +53,6 @@ if(isset($_POST['submit'])){
         <span class="logo">Webapp pj</span>
         <div class="nav">
           <a href="about.php">About Us</a>
-          <a href="user_page.php">User Page</a>
         </div>
     </nav>
 
@@ -73,9 +72,9 @@ if(isset($_POST['submit'])){
                 };
             };
             ?>
-            <input type="email" name="email" required placeholder="Email">
+            <input type="text" name="name" required placeholder="Username">
             <input type="password" name="password" required placeholder="Password">
-            <input type="submit" name="Submit" value="Login now" class="form-btn">
+            <input type="submit" name="submit" value="Login now" class="form-btn">
             <p>Don't have an account? <a href="register_form.php">Register Now</a></p>
         </form>
     </div>

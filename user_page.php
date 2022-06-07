@@ -1,4 +1,5 @@
-<p?php @include 'config.php'; session_start();
+<?php @include 'config.php'; 
+session_start();
 if(!isset($_SESSION['user_name'])){ header('location:login_form.php'); } ?>
 
 <!DOCTYPE html>
@@ -20,7 +21,7 @@ if(!isset($_SESSION['user_name'])){ header('location:login_form.php'); } ?>
           <a href="user_page.php">User Page</a>
           <div>
             <p>
-              Welcome <span><?php echo $_SESSION['user_name'] ?></span>
+              Welcome <span style="color : gold"><?php echo $_SESSION['user_name'] ?></span>
             </p>
             <a href="logout.php" class="" btn>Logout</a>
           </div>

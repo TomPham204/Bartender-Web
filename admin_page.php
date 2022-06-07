@@ -38,7 +38,7 @@ if(!isset($_SESSION['admin_name'])){
     <nav class="flex navbar">
         <span class="logo">Webapp pj</span>
         <div class="nav">
-          <p>Welcome <span><?php echo $_SESSION['admin_name'] ?></span></p>
+          <p style="color : white">Welcome <span style="color : gold"><?php echo $_SESSION['admin_name'] ?></span></p>
           <a href="logout.php" class=""btn>Logout</a>
         </div>
     </nav>
@@ -88,8 +88,8 @@ if(!isset($_SESSION['admin_name'])){
                 <input type="text" name="email" class="form-control" value="<?php echo $email; ?>" placeholder="Enter your email">
                 <input type="text" name="password" class="form-control" value="<?php echo $pass; ?>" placeholder="Enter your password">
                 <select name="user_type" value="<?php echo $user_type; ?>">
-                	<option class="form-control">User</option>
-					<option class="form-control">Admin</option>
+                	<option class="form-control">user</option>
+					<option class="form-control">admin</option>
 				</select>
             <?php 
             if ($update == true):
