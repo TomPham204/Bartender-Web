@@ -69,18 +69,20 @@ li {
   margin: 10px 30px;
   margin-right: 20px;
 }
-.nav > p {
+.nav p {
   color: white;
+  text-align: center;
 }
 
 .nav a {
   text-decoration: none;
   color: #fff;
+  text-align: center;
   margin: 1px 20px;
   margin-right: 10px;
 }
 
-.nav a[href="index.html"] {
+.nav a[href="user_page.html"] {
   border-bottom: 0.8px solid #fff;
 }
 
@@ -91,7 +93,7 @@ li {
 /* Ingredients */
 .ingredient-container {
   display: grid;
-  gap: 0px;
+  gap: 5px;
   grid-area: ingredient;
   grid-template-areas: "button button button" "main main main" "coffee milk tea" "mix mix mix" "caramel fizzy mint";
   grid-template-columns: 1fr 1fr 1fr;
@@ -134,17 +136,17 @@ li {
 .ingredient-container #main-ingredient {
   visibility: inherit;
   grid-area: main;
-  margin: 2px auto;
+  margin: 8px auto;
   align-items: center;
-  padding: 2px;
+  padding: 8px auto;
 }
 .ingredient-container #mix {
   visibility: inherit;
   grid-area: mix;
-  margin: 5px auto;
+  margin: 8px auto;
   margin-top: 10px;
   align-items: center;
-  padding: 5px;
+  padding: 8px auto;
 }
 .ingredient-container img {
   visibility: inherit;
@@ -238,7 +240,7 @@ li {
   border-radius: 10px;
 }
 .bottle-shake {
-  animation: shake 1s ease-in-out 1 normal;
+  animation: shake 0.8s linear 1 normal;
   animation-fill-mode: both;
   animation-delay: 0s;
 }
@@ -282,14 +284,17 @@ li {
 #result {
   align-items: center;
   margin: 0 auto;
-  padding: 20px 30px;
+  padding: 30px 30px;
+  padding-bottom: 5px;
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
 }
 #drink-description {
   align-items: center;
   margin: 0 auto;
-  padding: 20px 30px;
+  padding: 0px 30px;
+  padding-bottom: 30px;
   text-align: center;
   font-size: 30px;
+  line-height: 40px;
 }

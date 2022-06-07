@@ -43,7 +43,7 @@ if(isset($_POST['submit'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login form</title>
+    <title>Login</title>
 
     <link rel="stylesheet" href="css/register.css" />
 </head>
@@ -52,18 +52,16 @@ if(isset($_POST['submit'])){
     <nav class="flex navbar">
         <span class="logo">Webapp pj</span>
         <div class="nav">
-          <a href="about.php">About</a>
+          <a href="about.php">About Us</a>
+          <a href="user_page.php">User Page</a>
         </div>
     </nav>
 
     <div class="info-pane flex">
         <h3>Welcome to our site</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-          voluptas rem est rerum ratione error eligendi, ipsam nihil
-          exercitationem eius excepturi dolores facilis unde perferendis ipsum
-          reiciendis earum maxime? Labore?
-        </p>
+        <p>> Join us</p>
+        <p>> Be a registered user</p>
+        <p>> Save your favorite drinks</p>
     </div>
     <div class="form-flex">
         <form action="" method="post">
@@ -75,10 +73,10 @@ if(isset($_POST['submit'])){
                 };
             };
             ?>
-            <input type="email" name="email" required placeholder="enter your email">
-            <input type="password" name="password" required placeholder="enter your password">
-            <input type="submit" name="submit" value="login now" class="form-btn">
-            <p>don't have an account? <a href="register_form.php">Register Now</a></p>
+            <input type="email" name="email" required placeholder="Email">
+            <input type="password" name="password" required placeholder="Password">
+            <input type="submit" name="Submit" value="Login now" class="form-btn">
+            <p>Don't have an account? <a href="register_form.php">Register Now</a></p>
         </form>
     </div>
 </div>

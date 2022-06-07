@@ -30,7 +30,7 @@ if(!isset($_SESSION['admin_name'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>admin page</title>
+    <title>Admin page</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -38,12 +38,13 @@ if(!isset($_SESSION['admin_name'])){
     <nav class="flex navbar">
         <span class="logo">Webapp pj</span>
         <div class="nav">
-          <p>welcome <span><?php echo $_SESSION['admin_name'] ?></span></p>
+          <p>Welcome <span><?php echo $_SESSION['admin_name'] ?></span></p>
           <a href="logout.php" class=""btn>Logout</a>
         </div>
     </nav>
     <?php if (isset($_SESSION['message'])): ?>
         <div class="msg">
+            <h4>System message</h4>
 		<?php 
 			echo $_SESSION['message']; 
 			unset($_SESSION['message']);
@@ -87,8 +88,8 @@ if(!isset($_SESSION['admin_name'])){
                 <input type="text" name="email" class="form-control" value="<?php echo $email; ?>" placeholder="Enter your email">
                 <input type="text" name="password" class="form-control" value="<?php echo $pass; ?>" placeholder="Enter your password">
                 <select name="user_type" value="<?php echo $user_type; ?>">
-                	<option class="form-control">user</option>
-					<option class="form-control">admin</option>
+                	<option class="form-control">User</option>
+					<option class="form-control">Admin</option>
 				</select>
             <?php 
             if ($update == true):

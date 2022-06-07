@@ -37,7 +37,7 @@ if(isset($_POST['submit'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>register form</title>
+    <title>Registration</title>
 
     <link rel="stylesheet" href="css/register.css" />
 </head>
@@ -46,18 +46,19 @@ if(isset($_POST['submit'])){
     <nav class="flex navbar">
         <span class="logo">Webapp pj</span>
         <div class="nav">
-          <a href="about.php">About</a>
+          <a href="about.php">About Us</a>
+          <a href="user_page.php">User Page</a>
         </div>
     </nav>
-    <div class="info-pane flex">
+    <div class="info-pane">
         <h3>Welcome to our site</h3>
-        <p>
-          Join us. Be a registered user. Save your favorite drinks. 
-        </p>
+        <p>> Join us</p>
+        <p>> Be a registered user</p>
+        <p>> Save your favorite drinks</p>
     </div>
     <div class="form-flex">
         <form action="" method="post">
-            <h3>register now</h3>
+            <h3>Register now</h3>
             <?php 
             if(isset($error)){
                 foreach($error as $error){
@@ -65,15 +66,15 @@ if(isset($_POST['submit'])){
                 };
             };
             ?>
-            <input type="text" name="name" required placeholder="enter your name">
-            <input type="email" name="email" required placeholder="enter your email">
-            <input type="password" name="password" required placeholder="enter your password">
-            <input type="password" name="cpassword" required placeholder="confirm your password">
+            <input type="text" name="name" required placeholder="Username">
+            <input type="email" name="email" required placeholder="Email">
+            <input type="password" name="password" required placeholder="Password">
+            <input type="password" name="cpassword" required placeholder="Confirm your password">
             <select name="user_type">
-                <option value="user">user</option>
+                <option value="user">User</option>
             </select>
-            <input type="submit" name="submit" value="register now" class="form-btn">
-            <p>alreader have an account? <a href="login_form.php">Login Now</a></p>
+            <input type="submit" name="submit" value="Register now" class="form-btn">
+            <p>Alreader have an account? <a href="login_form.php">Login Now</a></p>
         </form>
     </div>
 </div>
