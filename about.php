@@ -41,7 +41,7 @@
         </div>
         <div>
           <img id="ddk" src="img/m4.png" alt="Đặng Đình Khang" />
-          <h5 id="txt4">Đặng Đình Khang</h5>
+          <h5 id="txt4">Dang Dinh Khang</h5>
         </div>
       </div>
     </div>
