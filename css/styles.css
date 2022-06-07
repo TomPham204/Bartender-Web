@@ -60,7 +60,10 @@ body {
   margin-right: 6px;
 }
 
-.nav a[href="register.html"] {
+.nav a[href="register_form.php"] {
+  border-bottom: 0.8px solid #fff;
+}
+.nav a[href="admin_page.php"] {
   border-bottom: 0.8px solid #fff;
 }
 

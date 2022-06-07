@@ -71,7 +71,11 @@ body {
   margin-right: 10px;
 }
 
-.nav a[href="register.html"] {
+.nav a[href="register_form.php"] {
+  border-bottom: 0.8px solid #fff;
+}
+
+.nav a[href="login_form.php"] {
   border-bottom: 0.8px solid #fff;
 }
 

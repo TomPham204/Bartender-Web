@@ -47,6 +47,10 @@ li {
   z-index: 5;
 }
 
+#btn{
+  text-align: center;
+}
+
 .navbar h2 {
   border: 1.5px solid #fff;
   border-radius: 5px;
@@ -82,7 +86,7 @@ li {
   margin-right: 10px;
 }
 
-.nav a[href="user_page.html"] {
+.nav a[href="user_page.php"] {
   border-bottom: 0.8px solid #fff;
 }
 
