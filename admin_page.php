@@ -44,11 +44,11 @@ if(!isset($_SESSION['admin_name'])){
     </nav>
     <?php if (isset($_SESSION['message'])): ?>
         <div class="msg">
-            <h4>System message</h4>
-		<?php 
-			echo $_SESSION['message']; 
-			unset($_SESSION['message']);
-		?>
+            <h4 style="color: red">System message:</h4>
+		    <h4><?php 
+			        echo  ($_SESSION['message']); 
+			        unset($_SESSION['message']);
+		    ?></h4>
 	    </div>
     <?php endif ?>
     <div class="input-group">  
@@ -100,5 +100,6 @@ if(!isset($_SESSION['admin_name'])){
             <?php endif; ?>  
         </form>
     </div>
+</div>
 </body>
 </html>

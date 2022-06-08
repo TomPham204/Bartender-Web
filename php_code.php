@@ -12,7 +12,7 @@ $user_type = "" ;
 if(isset($_POST['save'])){
         $name = $_POST['name'];
         $email = $_POST['email'];
-        $pass = md5($_POST['password']);
+        $pass = $_POST['password'];
         $user_type = $_POST['user_type'];
 
         mysqli_query($db, "INSERT INTO user_form(name, email, password, user_type) VALUES('$name','$email','$pass','$user_type')");
@@ -24,7 +24,7 @@ if (isset($_POST['update'])) {
 	$id = $_POST['id'];
 	$name = $_POST['name'];
     $email = $_POST['email'];
-    $pass = md5($_POST['password']);
+    $pass = $_POST['password'];
     $user_type = $_POST['user_type'];
 
 	mysqli_query($db, "UPDATE user_form SET name='$name', email='$email', password='$pass', user_type='$user_type' WHERE id=$id");
