@@ -1,6 +1,8 @@
 <?php include ('php_code.php');?>
 
-<?php 
+<?php
+$update = false;
+$delete = false; 
 if (isset($_GET['edit'])) {
     $id = $_GET['edit'];
     $update = true;
@@ -17,11 +19,25 @@ if (isset($_GET['edit'])) {
 ?>
 
 <?php 
+if (isset($_GET['del'])) {
+    $id = $_GET['del'];
+    $delete = true;
+    $record = mysqli_query($db, "SELECT * FROM user_form WHERE id=$id");
 
+    if (mysqli_num_rows($record) == 1) {
+        $n = mysqli_fetch_array($record);
+        $name = $n['name'];
+        $email = $n['email'];
+        $pass = $n['password'];
+        $user_type = $n['user_type'];
+    }
+}
+?>
+
+<?php 
 if(!isset($_SESSION['admin_name'])){
     header('location:login_form.php');
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -42,15 +58,6 @@ if(!isset($_SESSION['admin_name'])){
           <a href="logout.php" class=""btn>Logout</a>
         </div>
     </nav>
-    <?php if (isset($_SESSION['message'])): ?>
-        <div class="msg">
-            <h4 style="color: red">System message:</h4>
-		    <h4><?php 
-			        echo  ($_SESSION['message']); 
-			        unset($_SESSION['message']);
-		    ?></h4>
-	    </div>
-    <?php endif ?>
     <div class="input-group">  
     <?php $results = mysqli_query($db, "SELECT * FROM user_form"); ?>
 
@@ -83,7 +90,14 @@ if(!isset($_SESSION['admin_name'])){
         </table>      
         <form action="php_code.php" method="POST">
             <input type="hidden" name="id" value="<?php echo $id; ?>">
-                <h3>Add/Update User</h3>  
+                <h3>Add/Update User</h3>
+                <?php if (isset($_SESSION['message'])){ ?>
+                <h4 style="color: red">System message:</h4>
+		        <span class="error-msg"><?php
+                    echo($_SESSION['message']);
+                    unset($_SESSION['message']);
+                ?></span>
+                <?php } ?>  
                 <input type="text" name="name" class="form-control" value="<?php echo $name; ?>" placeholder="Enter your name">
                 <input type="text" name="email" class="form-control" value="<?php echo $email; ?>" placeholder="Enter your email">
                 <input type="text" name="password" class="form-control" value="<?php echo $pass; ?>" placeholder="Enter your password">
@@ -92,12 +106,18 @@ if(!isset($_SESSION['admin_name'])){
 					<option class="form-control">admin</option>
 				</select>
             <?php 
-            if ($update == true):
-            ?>
+            if ($update == true) {
+                ?>
                 <button type="submit" class="form-btn" name="update">Update</button>
-            <?php else: ?>    
-                <button type="submit" class="form-btn" name="save">Save</button>
-            <?php endif; ?>  
+            <?php
+            }elseif ($delete == true){
+            ?>
+                <button type="submit" class="form-btn" name="delete">Delete</button>
+            <?php 
+            }else{
+            ?>   
+                <button type="submit" class="form-btn" name="save">Add</button>
+            <?php } ?>  
         </form>
     </div>
 </div>

@@ -159,19 +159,12 @@ body {
     color: #fff;
 }
 
-.msg {
-    margin: 30px auto;
+.error-msg {
+    margin: 10px 0;
+    display: block;
+    background: crimson;
+    color: #fff;
     border-radius: 5px;
-    background: rgba(0, 0, 0, 0.509);
-    border: 5px solid yellow;
-    width: 100%;
-    height: 9%;
-    align-items: center;
-}
-
-.msg h4 {
-    color: rgb(0, 255, 85);
-    text-align: center;
-    font-size: 1.1em;
-    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
 }

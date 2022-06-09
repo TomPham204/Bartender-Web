@@ -32,7 +32,7 @@ if(isset($_POST['submit'])){
 
         }
     }else{
-        $error[] = 'incorrect email or password!';
+        $error[] = 'incorrect username or password!';
     }
 };
 ?>

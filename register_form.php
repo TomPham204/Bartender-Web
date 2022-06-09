@@ -10,7 +10,7 @@ if(isset($_POST['submit'])){
     $cpass = $_POST['cpassword'];
     $user_type = $_POST['user_type'];
 
-    $select = "SELECT * FROM user_form WHERE email = '$email' && password = '$pass' ";
+    $select = "SELECT * FROM user_form WHERE email = '$email' OR name= '$name'";
 
     $result = mysqli_query($conn, $select);
 
@@ -47,7 +47,6 @@ if(isset($_POST['submit'])){
         <span class="logo">Webapp pj</span>
         <div class="nav">
           <a href="about.php">About Us</a>
-          <a href="user_page.php">User Page</a>
         </div>
     </nav>
     <div class="info-pane">
