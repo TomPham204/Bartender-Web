@@ -14,7 +14,7 @@ if(!isset($_SESSION['user_name'])){ header('location:login_form.php'); } ?>
   <body>
     <div class="grid-container">
       <nav class="navbar">
-        <span class="logo">Webapp pj</span>
+        <span class="logo">Web Application Development Project</span>
         <h2 id="btn" onclick="zoomOut()">START!</h2>
         <div class="nav">
           <a href="about.php">About Us</a>

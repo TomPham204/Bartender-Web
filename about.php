@@ -9,7 +9,7 @@
   <body>
     <div class="grid-container">
       <nav class="flex navbar">
-        <span class="logo">Webapp pj</span>
+        <span class="logo">Web Application Development Project</span>
         <div class="nav">
           <a href="about.php">About Us</a>
           <a href="user_page.php">User Page</a>
@@ -17,14 +17,14 @@
       </nav>
       <div class="info-pane">
         <h3>Who are we?</h3>
-        <p>We are team ... from the webapp course.</p>
+        <p>We are a team ... from the WAD course.</p>
         <h3>Why we build this website?</h3>
         <p>
           This website is a demonstration of how a website works, serving as
-          project for webapp course
+          a project for the WAD course.
         </p>
         <h3>How did we do it?</h3>
-        <p>We use html css js, combined with backend techs</p>
+        <p>We used Html, Css and Js, combined with backend techs.</p>
       </div>
       <div class="member">
         <div>

@@ -52,7 +52,7 @@ if(!isset($_SESSION['admin_name'])){
 <body>
 <div class="grid-container">
     <nav class="flex navbar">
-        <span class="logo">Webapp pj</span>
+        <span class="logo">Web Application Development Project</span>
         <div class="nav">
           <p style="color : white">Welcome <span style="color : gold"><?php echo $_SESSION['admin_name'] ?></span></p>
           <a href="logout.php" class=""btn>Logout</a>

@@ -50,7 +50,7 @@ if(isset($_POST['submit'])){
 <body>
 <div class="grid-container">
     <nav class="flex navbar">
-        <span class="logo">Webapp pj</span>
+        <span class="logo">Web Application Development Project</span>
         <div class="nav">
           <a href="about.php">About Us</a>
         </div>
