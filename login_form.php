@@ -9,7 +9,7 @@ if(isset($_POST['submit'])){
     $name = mysqli_real_escape_string($conn, $_POST['name']);
     $pass = $_POST['password'];
 
-    $select = "SELECT * FROM user_form WHERE name = '$name' && password = '$pass' ";
+    $select = "SELECT * FROM user_form WHERE name = '$name' AND password = '$pass' ";
 
     $result = mysqli_query($conn, $select);
 
